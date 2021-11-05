@@ -24,6 +24,7 @@ public class MaquinaExpendedoraMejorada {
         totalDineroAcumulado = 0;
         estacionOrigen = origen;
         estacionDestino = destino;
+        imprimirBillete = 0;
     }
 
     /**
@@ -78,7 +79,7 @@ public class MaquinaExpendedoraMejorada {
         }            
     }
     
-    public int getNumeroBilletesVendidos(){
+    public int numeroBilletesVendidos(){
          return imprimirBillete;
     }
     
