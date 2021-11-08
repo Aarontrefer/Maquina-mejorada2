@@ -62,18 +62,17 @@ public class MaquinaExpendedoraMejorada {
     public void imprimirBillete() {
         int cantidadDelDineroQueFalta = precioBillete - balanceClienteActual;
         if ( cantidadDelDineroQueFalta <= 0) { 
-            
-             if ( tipoMaquina ==true){
-                 precioBillete *= 0.9;
-            }
             // Simula la impresion de un billete
             System.out.println("##################");
             System.out.println("# Billete de tren:");
             System.out.println("# De " + estacionOrigen + " a " + estacionDestino);
             System.out.println("# " + precioBillete + " euros.");
             System.out.println("##################");
-            System.out.println(); 
+            System.out.println();
             
+             if ( tipoMaquina ==true){
+                System.out.println("Tienes un 10% de descuento en alimerka en tu proxima compra");
+            }
             // Actualiza el total de dinero acumulado en la maquina
             totalDineroAcumulado = totalDineroAcumulado + precioBillete;
             // Reduce el balance del cliente actual dejandole seguir utilizando la maquina
