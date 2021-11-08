@@ -71,7 +71,7 @@ public class MaquinaExpendedoraMejorada {
             System.out.println();
             
              if ( tipoMaquina ==true){
-                System.out.println("Tienes un 10% de descuento en alimerka en tu proxima compra");
+                System.out.println("Tienes un " + ( precioBillete *=0.1 ) + " euros de descuento en alimerka en tu proxima compra");
             }
             // Actualiza el total de dinero acumulado en la maquina
             totalDineroAcumulado = totalDineroAcumulado + precioBillete;
